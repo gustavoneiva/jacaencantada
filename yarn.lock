@@ -1755,11 +1755,6 @@ boolbase@^1.0.0, boolbase@~1.0.0:
   resolved "https://registry.npm.taobao.org/boolbase/download/boolbase-1.0.0.tgz#68dff5fbe60c51eb37725ea9e3ed310dcc1e776e"
   integrity sha1-aN/1++YMUes3cl6p4+0xDcwed24=
 
-bootstrap@^4.5.0:
-  version "4.5.0"
-  resolved "https://registry.yarnpkg.com/bootstrap/-/bootstrap-4.5.0.tgz#97d9dbcb5a8972f8722c9962483543b907d9b9ec"
-  integrity sha512-Z93QoXvodoVslA+PWNdk23Hze4RBYIkpb5h8I2HY2Tu2h7A0LpAgLcyrhrSUyo2/Oxm2l1fRZPs1e5hnxnliXA==
-
 brace-expansion@^1.1.7:
   version "1.1.11"
   resolved "https://registry.npm.taobao.org/brace-expansion/download/brace-expansion-1.1.11.tgz#3c7fcbf529d87226f3d2f52b966ff5271eb441dd"
@@ -1867,6 +1862,13 @@ browserslist@^4.0.0, browserslist@^4.12.0, browserslist@^4.8.5:
     node-releases "^1.1.53"
     pkg-up "^2.0.0"
 
+buefy@^0.8.20:
+  version "0.8.20"
+  resolved "https://registry.yarnpkg.com/buefy/-/buefy-0.8.20.tgz#75708800548220654575903d031a81fc8575b7f3"
+  integrity sha512-pg8Cn0m9cjqp2/vaKT4VIfU8KIumuX/gAT1GtearXRs56+kKqAPx3j9O8cm9W6P4jPUCHajKX6H8AqD0ram2Bg==
+  dependencies:
+    bulma "0.7.5"
+
 buffer-from@^1.0.0:
   version "1.1.1"
   resolved "https://registry.npm.taobao.org/buffer-from/download/buffer-from-1.1.1.tgz#32713bc028f75c02fdb710d7c7bcec1f2c6070ef"
@@ -1900,6 +1902,11 @@ builtin-status-codes@^3.0.0:
   version "3.0.0"
   resolved "https://registry.npm.taobao.org/builtin-status-codes/download/builtin-status-codes-3.0.0.tgz#85982878e21b98e1c66425e03d0174788f569ee8"
   integrity sha1-hZgoeOIbmOHGZCXgPQF0eI9Wnug=
+
+bulma@0.7.5:
+  version "0.7.5"
+  resolved "https://registry.yarnpkg.com/bulma/-/bulma-0.7.5.tgz#35066c37f82c088b68f94450be758fc00a967208"
+  integrity sha512-cX98TIn0I6sKba/DhW0FBjtaDpxTelU166pf7ICXpCCuplHWyu6C9LYZmL5PEsnePIeJaiorsTEzzNk3Tsm1hw==
 
 bytes@3.0.0:
   version "3.0.0"
@@ -2088,6 +2095,21 @@ check-types@^8.0.3:
   resolved "https://registry.npm.taobao.org/check-types/download/check-types-8.0.3.tgz#3356cca19c889544f2d7a95ed49ce508a0ecf552"
   integrity sha1-M1bMoZyIlUTy16le1JzlCKDs9VI=
 
+"chokidar@>=2.0.0 <4.0.0", chokidar@^3.4.0:
+  version "3.4.0"
+  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.4.0.tgz#b30611423ce376357c765b9b8f904b9fba3c0be8"
+  integrity sha1-swYRQjzjdjV8dlubj5BLn7o8C+g=
+  dependencies:
+    anymatch "~3.1.1"
+    braces "~3.0.2"
+    glob-parent "~5.1.0"
+    is-binary-path "~2.1.0"
+    is-glob "~4.0.1"
+    normalize-path "~3.0.0"
+    readdirp "~3.4.0"
+  optionalDependencies:
+    fsevents "~2.1.2"
+
 chokidar@^2.1.8:
   version "2.1.8"
   resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-2.1.8.tgz#804b3a7b6a99358c3c5c61e71d8728f041cff917"
@@ -2106,21 +2128,6 @@ chokidar@^2.1.8:
     upath "^1.1.1"
   optionalDependencies:
     fsevents "^1.2.7"
-
-chokidar@^3.4.0:
-  version "3.4.0"
-  resolved "https://registry.npm.taobao.org/chokidar/download/chokidar-3.4.0.tgz#b30611423ce376357c765b9b8f904b9fba3c0be8"
-  integrity sha1-swYRQjzjdjV8dlubj5BLn7o8C+g=
-  dependencies:
-    anymatch "~3.1.1"
-    braces "~3.0.2"
-    glob-parent "~5.1.0"
-    is-binary-path "~2.1.0"
-    is-glob "~4.0.1"
-    normalize-path "~3.0.0"
-    readdirp "~3.4.0"
-  optionalDependencies:
-    fsevents "~2.1.2"
 
 chownr@^1.1.1, chownr@^1.1.2:
   version "1.1.4"
@@ -4666,11 +4673,6 @@ jest-worker@^25.4.0:
     merge-stream "^2.0.0"
     supports-color "^7.0.0"
 
-jquery@^3.5.1:
-  version "3.5.1"
-  resolved "https://registry.yarnpkg.com/jquery/-/jquery-3.5.1.tgz#d7b4d08e1bfdb86ad2f1a3d039ea17304717abb5"
-  integrity sha512-XwIBPqcMn57FxfT+Go5pzySnm4KWkT1Tv7gjrpT1srtf8Weynl6R273VJ5GjkRb51IzMp5nbaPjJXMWeju2MKg==
-
 js-message@1.0.5:
   version "1.0.5"
   resolved "https://registry.npm.taobao.org/js-message/download/js-message-1.0.5.tgz#2300d24b1af08e89dd095bc1a4c9c9cfcb892d15"
@@ -5926,11 +5928,6 @@ pnp-webpack-plugin@^1.6.4:
   dependencies:
     ts-pnp "^1.1.6"
 
-popper.js@^1.16.1:
-  version "1.16.1"
-  resolved "https://registry.yarnpkg.com/popper.js/-/popper.js-1.16.1.tgz#2a223cb3dc7b6213d740e40372be40de43e65b1b"
-  integrity sha512-Wb4p1J4zyFTbM+u6WuO4XstYx4Ky9Cewe4DWrel7B0w6VVICvPwdOpotjzcf6eD8TsckVnIMNONQyPIUFOUbCQ==
-
 portfinder@^1.0.26:
   version "1.0.26"
   resolved "https://registry.npm.taobao.org/portfinder/download/portfinder-1.0.26.tgz#475658d56ca30bed72ac7f1378ed350bd1b64e70"
@@ -6804,6 +6801,13 @@ safe-regex@^1.1.0:
   version "2.1.2"
   resolved "https://registry.npm.taobao.org/safer-buffer/download/safer-buffer-2.1.2.tgz#44fa161b0187b9549dd84bb91802f9bd8385cd6a"
   integrity sha1-RPoWGwGHuVSd2Eu5GAL5vYOFzWo=
+
+sass@^1.26.8:
+  version "1.26.8"
+  resolved "https://registry.yarnpkg.com/sass/-/sass-1.26.8.tgz#312652530721f9568d4c4000b0db07ec6eb23325"
+  integrity sha512-yvtzyrKLGiXQu7H12ekXqsfoGT/aTKeMDyVzCB675k1HYuaj0py63i8Uf4SI9CHXj6apDhpfwbUr3gGOjdpu2Q==
+  dependencies:
+    chokidar ">=2.0.0 <4.0.0"
 
 sax@~1.2.4:
   version "1.2.4"
